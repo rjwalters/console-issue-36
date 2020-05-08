@@ -12,5 +12,4 @@ env_logger = "0.7.1"
 log = "0.4.8"
 
 [patch.crates-io]
-dialoguer = { git = "https://github.com/mitsuhiko/dialoguer" }
 console = { git = "https://github.com/mitsuhiko/console" }
