@@ -8,14 +8,14 @@ fn main() {
     let thread = std::thread::spawn(|| {
         let term = Term::stdout();
         let key = term.read_key();
-        debug!("Please press any button\n");
+        debug!("Please press any button");
         print!("{:?}\n", key.unwrap());
-        debug!("Hello from spawned thread 1\n");
-        debug!("Hello from spawned thread 2\n");
+        debug!("Hello from spawned thread 1");
+        debug!("Hello from spawned thread 2");
     });
 
-    debug!("Hello from main thread 1\n");
-    debug!("Hello from main thread 2\n");
+    debug!("Hello from main thread 1");
+    debug!("Hello from main thread 2");
 
     thread.join().unwrap();
 }
