@@ -9,7 +9,7 @@ fn main() {
         debug!("Please press any button");
         let term = Term::stdout();
         let key = term.read_key();
-        print!("\n{:?}\n", key.unwrap());
+        print!("{:?}\n", key.unwrap());
         debug!("Hello from spawned thread 1");
         debug!("Hello from spawned thread 2");
     });
