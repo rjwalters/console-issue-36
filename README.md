@@ -1,3 +1,6 @@
+# See https://github.com/mitsuhiko/console/issues/36
+
+
 This is an attempt to create a minimum repro for a potential bug with console crate.
 The problem is that new lines do not start column 0.
 Here is the example of the output I see on Mac:
