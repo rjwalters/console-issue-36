@@ -8,6 +8,7 @@ fn main() {
     let thread = std::thread::spawn(|| {
         let term = Term::stdout();
         let key = term.read_key();
+        print!("\n");
         debug!("Please press any button");
         print!("{:?}\n", key.unwrap());
         debug!("Hello from spawned thread 1");
