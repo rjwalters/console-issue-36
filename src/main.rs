@@ -6,7 +6,7 @@ fn main() {
     env_logger::init();
     println!("Hello, world!");
     let thread = std::thread::spawn(|| {
-        print!("Please press any button\n");
+        debug!("Please press any button\n");
         let term = Term::stdout();
         let key = term.read_key();
         print!("{:?}\n", key.unwrap());
